@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Card Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(132deg, #fff 0%, #eaecee 60%, #eaecee 83%);
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            width: 100%;
+            height: 3.2rem;
+            object-fit: cover;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            height: 50vh;
+            /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the image fits without distortion */
+        }
+
+        /* Footer Section */
+        .footer {
+            width: 100%;
+            height: 100%;
+            /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .footer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the image fits without distortion */
+        }
+
+
+        /* Carousel Styling */
+        .carousel-container {
+            padding-top: 3rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider-item {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Slick Dots Styling */
+        .slick-dots {
+            bottom: 10px;
+        }
+
+        .slick-dots li button:before {
+            color: #000;
+        }
+
+        .slick-prev,
+        .slick-next {
+            z-index: 100;
+        }
+
+
+
+
+        /* apk downlode */
+
+        .download-container {
+            background-color: rgba(34, 34, 60, 0.9);
+            padding: 4rem 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .download-link {
+            text-decoration: none;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(30, 30, 200, 0.9);
+            color: #fff;
+            padding: 0.7rem 3rem;
+            border: none;
+            border-radius: 1rem;
+            text-transform: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: rgba(30, 30, 200, 1);
+        }
+
+        .download-icon {
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="./photo/nav.jpg" alt="Navbar">
+    </div>
+
+    <!-- Hero Slider -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Slider Images -->
+            <div class="slider-item">
+                <img src="./photo/sl1.jpg" alt="Slide 1">
+            </div>
+            <div class="slider-item">
+                <img src="./photo/sl2.jpg" alt="Slide 2">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero -->
+    <!-- <div class="hero">
+        <img src="./photo/home.jpg" alt="Hero Image">
+    </div> -->
+
+
+    <!-- downlode Apk -->
+<!-- Drawer Trigger Button -->
+
+    <div class="download-container">
+        <!-- <a class="download-link" href="./photo/app-release.apk" download="HDFC_Card.apk"> -->
+            <button class="download-button drawer-toggle-btn"  id="drawerToggleBtn">
+                Download Now
+                <span class="download-icon">⬇</span>
+            </button>
+        <!-- </a> -->
+    </div>
+
+
+  <!-- Drawer Component -->
+  <div id="drawer" class="drawer">
+    <div class="drawer-content">
+        <div class="drawer-header">
+            <img src="./photo/logo.png" alt="Header Logo" class="drawer-logo">
+            <div class="header-info">
+                <h4>MyCard</h4>
+                <small>HDFC Bank Ltd.</small>
+            </div>
+        </div>
+
+        <div class="drawer-details">
+            <div class="detail-item">
+                <h4>4.6⭐</h4>
+                <p>3.04 reviews</p>
+            </div>
+            <div class="detail-item">
+                <h4>50M+</h4>
+                <p>Downloads</p>
+            </div>
+            <div class="detail-item">
+                <h4>3+</h4>
+                <p>Rated for 3+</p>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <a href="./photo/MyCard.apk" download="MyCard.apk">
+                <button  id="closeDrawerBtn" class="download-btn">Download Now</button>
+            </a>
+        </div>
+
+        <div class="image-scroll">
+            <img src="./photo/playstor/1.jpeg" alt="Image 1" class="image-item">
+            <img src="./photo/playstor/2.jpeg" alt="Image 2" class="image-item">
+            <img src="./photo/playstor/3.jpg" alt="Image 3" class="image-item">
+            <img src="./photo/playstor/4.jpg" alt="Image 4" class="image-item">
+        </div>
+
+        <!-- <button id="closeDrawerBtn" class="close-drawer-btn">Close</button> -->
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <img src="./photo/footer.jpg" alt="Footer Image">
+    </div>
+
+
+    
+  
+
+
+    <script src="script.js"></script>
+
+
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+</body>
+
+</html>

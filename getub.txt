@@ -1,0 +1,38 @@
+
+git init
+git add .
+git commit -m "sbnscommit"
+git branch -M main
+git remote add origin https://github.com/mangeravan/codehdweb.git
+git push -u origin main
+
+
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/mangeravan/codeaxweb.git
+git branch -M main
+git push -u origin main
+
+
+git remote set-url origin git@github.com:codeaxweb.git.git
+
+
+
+git pull origin main
+
+git push --set-upstream origin main
+
+
+
+C:\Users\Lenovo\Desktop\Html Code Axis>git checkout -b main
+fatal: a branch named 'main' already exists
+
+C:\Users\Lenovo\Desktop\Html Code Axis>git checkout -b maink
+Switched to a new branch 'maink'
+
+C:\Users\Lenovo\Desktop\Html Code Axis>git push -u origin maink
+Enumerating objects: 31, done.
+
+2a71dc5a
+
+git push -u origin main --force
